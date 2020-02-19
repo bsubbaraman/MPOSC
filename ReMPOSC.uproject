@@ -13,5 +13,15 @@
 				"OSC"
 			]
 		}
+	],
+	"Plugins": [
+		{
+			"Name": "PlaybackCtrl",
+			"Enabled": true
+		},
+		{
+			"Name": "DDTools",
+			"Enabled": true
+		}
 	]
 }
