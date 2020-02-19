@@ -1,3 +1,7 @@
+[submodule "Plugins/DDTools"]
+	path = Plugins/DDTools
+	url = https://github.com/remap/DDTools
+
 [submodule "Plugins/PlaybackCtrl"]
 	path = Plugins/PlaybackCtrl
 	url = https://github.com/bsubbaraman/PlaybackCtrl
