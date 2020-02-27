@@ -3,10 +3,10 @@
 #include "OscDispatcher.h"
 
 
+
 UOscReceiverComponent::UOscReceiverComponent()
     : _listener(this)
 {
-
 }
 
 UOscReceiverComponent::UOscReceiverComponent(FVTableHelper & helper)
@@ -25,7 +25,6 @@ void UOscReceiverComponent::OnRegister()
         (!GetOwner() || !GetOwner()->HasAnyFlags(RF_ClassDefaultObject)))
     {
         instance->RegisterReceiver(&_listener);
-
         if(GetOwner())
         {
             UE_LOG(LogOSC, Verbose, TEXT("Registering component %s of %s"),  *GetName(), *GetOwner()->GetName());

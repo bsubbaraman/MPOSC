@@ -5,8 +5,6 @@
 
 // Sets default values
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FTestDelegate);
-
 ATestNetMode::ATestNetMode()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -25,19 +23,19 @@ void ATestNetMode::BeginPlay()
 void ATestNetMode::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-    if (GetNetMode()== NM_Standalone)
-    {
-        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "standalone");
-    }
-    else if (GetNetMode()== NM_DedicatedServer)
-    {
-        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "dedicated");
-    }
-    else
-    {
-        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "not stand");
-
-    }
+//    if (GetNetMode()== NM_Standalone)
+//    {
+//        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "standalone");
+//    }
+//    else if (GetNetMode()== NM_DedicatedServer)
+//    {
+//        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "dedicated");
+//    }
+//    else
+//    {
+//        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "not stand");
+//
+//    }
    
 
 }
